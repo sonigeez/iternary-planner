@@ -329,7 +329,7 @@ export default function AdventureDetail({ adventure }: AdventureDetailProps) {
           </Tabs>
         </div>
         
-        <div>
+        {/* <div>
           <Card className="sticky top-20">
             <CardHeader>
               <CardTitle>Begin Adventure</CardTitle>
@@ -368,7 +368,7 @@ export default function AdventureDetail({ adventure }: AdventureDetailProps) {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </div>
   );
