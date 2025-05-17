@@ -1,3 +1,19 @@
+# Travel Planner
+
+## Overview
+
+This is a travel planner app that allows you to create and share travel itineraries. It uses the Google Maps API and GPT API to generate itineraries and locations.
+
+
+Tech Stack:
+- Next.js
+- Tailwind CSS
+- Shadcn UI
+- Lucide
+- Google Maps API
+- GPT API
+- Bolt.new and Cursor for development
+
 # Project Setup
 
 ## Environment Variables
@@ -10,23 +26,9 @@ To set up your environment variables:
 # API Keys - Server-side only
 GOOGLE_MAPS_API_KEY=your-google-maps-api-key
 OPENAI_API_KEY=your-openai-api-key
-
-# No client-side environment variables with API keys
-# DO NOT USE NEXT_PUBLIC_ prefix for API keys
 ```
 
 2. Replace `your-google-maps-api-key` and `your-openai-api-key` with your actual API keys.
-
-## API Security
-
-All API calls have been moved to server-side endpoints to prevent exposing API keys to clients. The following endpoints have been created:
-
-- `/api/itinerary` - Handles OpenAI calls for generating itineraries
-- `/api/maps` - Handles geocoding and place photo operations
-- `/api/maps/streetview` - Serves Street View images
-- `/api/maps/staticmap` - Serves Static Map images
-
-## Development
 
 Run the development server:
 
